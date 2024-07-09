@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     resources :bookmarks, only: [:create, :new]
   end
   delete '/bookmarks/:id', to: 'bookmarks#destroy'
+
+  root to: 'lists#index'
   # Defines the root path route ("/")
   # root "posts#index"
 end
