@@ -1,6 +1,7 @@
 <div class="d-flex justify-content-center">
   <div class="">
     <h1>Super Movie Lists</h1>
+    <%= link_to "New List", new_list_path, class: "btn btn-primary" %>
     <div class="d-flex lists col-sm-6 m-5">
     <% @lists.each do |list| %>
     <div class="m-2 p-2">
